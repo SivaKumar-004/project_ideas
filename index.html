@@ -10,29 +10,33 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Tailwind Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            // Primary Theme Colors
             primary: {
-              light: '#732fae', // Purple shade for light mode
-              dark: '#9d4edd',  // Lighter purple for dark mode
+              light: '#732fae',
+              dark: '#9d4edd',
             },
-            // Secondary Theme Colors
             secondary: {
-              light: '#75b4ab', // Teal shade for light mode
-              dark: '#90e0d8',  // Lighter teal for dark mode
+              light: '#75b4ab',
+              dark: '#90e0d8',
             },
-            // Dark Mode Background Colors
             dark: {
-              DEFAULT: '#121212', // Main background
-              paper: '#1e1e1e',   // Elevated surfaces
-              card: '#252525',    // Card backgrounds
+              DEFAULT: '#0f172a',
+              paper: '#1e293b',
+              card: '#334155',
             },
-          }
+          },
+          boxShadow: {
+            'dark-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4)',
+            'dark-xl': '0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4)',
+            'glow': '0 0 15px rgba(157, 78, 221, 0.5)',
+            'glow-lg': '0 0 30px rgba(157, 78, 221, 0.4)',
+          },
         }
       }
     }
@@ -80,18 +84,31 @@
           </span>
         </div>
 
-        <!-- Navigation Links -->
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="#projects" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">Projects</a>
-          <a href="#about" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">About</a>
-          <a href="#contact" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">Contact</a>
-          
-          <!-- Theme Toggle Button -->
-          <button id="themeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
-            <i data-lucide="sun" class="w-5 h-5 dark:hidden"></i>
-            <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+
+
+
+        <div class="flex items-center gap-4">
+          <!-- Theme Toggle -->
+          <button
+            id="themeToggle"
+            class="relative p-2 rounded-lg bg-gray-100 dark:bg-dark-card text-gray-600 dark:text-gray-300 
+                   hover:text-primary-light dark:hover:text-primary-dark transition-all duration-500 
+                   overflow-hidden group"
+          >
+            <i data-lucide="sun" class="w-5 h-5 theme-icon sun-icon"></i>
+            <i data-lucide="moon" class="w-5 h-5 theme-icon moon-icon absolute top-2 left-2"></i>
           </button>
-        </nav>
+
+          <!-- Navigation -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="#projects" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">Projects</a>
+            <a href="#about" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">About</a>
+            <a href="#contact" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">Contact</a>
+          </nav>
+        </div>
+
+
+
       </div>
     </div>
   </header>
