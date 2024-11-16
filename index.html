@@ -44,6 +44,19 @@
 
   <!-- Animation Styles -->
   <style>
+    .logo-container {
+      height: 64px; /* Adjust height */
+      max-width: 200px; /* Restrict max width */
+    }
+    
+    .logo-container img {
+      object-fit: contain;
+      width: auto;
+      height: 100%;
+    }
+    
+
+
     /* Fade-in-up Animation Definition */
     @keyframes fadeInUp {
       from {
@@ -76,7 +89,9 @@
     <!-- Header Content -->
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
+
         <!-- Logo Section -->
+
         <div class="flex items-center gap-2">
           <i data-lucide="rocket" class="h-8 w-8 text-primary-light dark:text-primary-dark"></i>
           <span class="font-bold text-xl bg-gradient-to-r from-primary-light to-secondary-light dark:from-primary-dark dark:to-secondary-dark text-transparent bg-clip-text">
@@ -100,7 +115,9 @@
           </button>
 
           <!-- Navigation -->
+           
           <nav class="hidden md:flex items-center gap-8">
+            <a href="/" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">Home</a>
             <a href="#projects" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">Projects</a>
             <a href="#about" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">About</a>
             <a href="#contact" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">Contact</a>
@@ -131,11 +148,16 @@
             with real-world applications.
           </p>
           <!-- CTA Button -->
-          <button class="bg-white text-[#732fae] px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold 
-                       flex items-center gap-2 hover:bg-opacity-90 transition-all animate-fade-in-up-delay-2">
-            Explore Projects
-            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-          </button>
+
+            <a href="#projects" class="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors">
+              <button class="bg-white text-[#732fae] px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold 
+              flex items-center gap-2 hover:bg-opacity-90 transition-colors animate-fade-in-up-delay-2 ">
+                Explore Projects
+
+            
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+              </button>
+            </a>
         </div>
       </div>
     </section>
@@ -154,6 +176,10 @@
 
         <!-- Specialization Filter Buttons -->
         <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12">
+          <!-- All Button -->
+          <button data-spec="all" class="spec-button px-4 md:px-6 py-2 md:py-3 rounded-lg font-medium 
+                                        bg-gradient-to-r from-red-500/20 to-red-600/20 backdrop-blur-lg 
+                                        hover:scale-105 active">ALL</button>
           <!-- CSE Button -->
           <button data-spec="cse" class="spec-button px-4 md:px-6 py-2 md:py-3 rounded-lg font-medium 
                                        bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-lg 
@@ -269,7 +295,7 @@
             <!-- CTA Button -->
             <button class="bg-gradient-to-r from-primary-light to-secondary-light dark:from-primary-dark 
                          dark:to-secondary-dark text-white px-6 py-3 rounded-lg font-semibold 
-                         hover:shadow-lg transition-all duration-300 hover:scale-105">
+                         hover:shadow-lg transition-all duration-300 hover:scale-105" onclick="location.href='https://forms.gle/kWBU85vjSKoFjTBm6'">
               Join Our Community
             </button>
           </div>
@@ -296,26 +322,43 @@
         <div>
           <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
+            <li><a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
             <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
             <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
             <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
         <!-- Contact Column -->
+
+
+
+
+        
         <div>
           <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
-          <p class="text-gray-400">Email: iedc@example.com</p>
+          <p class="text-gray-400">Email: iedcceal@gmail.com</p>
           <!-- Social Links -->
           <div class="flex gap-4 mt-4">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.facebook.com/p/IEDC-College-of-Engineering-Attingal-100065200363274/" class="text-gray-400 hover:text-white transition-colors">
               <i data-lucide="facebook" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-              <i data-lucide="twitter" class="w-5 h-5"></i>
+            <a href="https://www.youtube.com/@IEDCCEAL" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="youtube" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/company/innovation-and-entrepreneurship-development-cell-iedc-ceal/" class="text-gray-400 hover:text-white transition-colors">
               <i data-lucide="linkedin" class="w-5 h-5"></i>
             </a>
+            <a href="https://www.instagram.com/alchemy_iedcceal/" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="https://github.com/IEDC-CEAL" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="github" class="w-5 h-5"></i>
+            </a>
+
+            
+
+
+
           </div>
         </div>
       </div>
@@ -360,54 +403,192 @@
 
     // Projects Data
     const projectsBySpec = {
-      // CSE Projects
-      cse: [
-        {
-          title: "Cloud-Based IDE",
-          description: "Build a web-based code editor with real-time pair programming capabilities.",
-          difficulty: "Advanced",
-          duration: "4-5 months",
-          image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=500"
-        },
-        {
-          title: "Secure File Storage",
-          description: "Implement end-to-end encrypted file storage with blockchain-based access control.",
-          difficulty: "Intermediate",
-          duration: "3-4 months",
-          image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=500"
-        }
-      ],
-      // ECE Projects
-      ece: [
-        {
-          title: "Smart Home Automation",
-          description: "Design an IoT-based home automation system with voice control.",
-          difficulty: "Intermediate",
-          duration: "3-4 months",
-          image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=500"
-        }
-      ],
-      // EEE Projects
-      eee: [
-        {
-          title: "Solar Power Monitor",
-          description: "Create a smart grid monitoring system for solar power installations.",
-          difficulty: "Advanced",
-          duration: "4-5 months",
-          image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=500"
-        }
-      ],
-      // AI & ML Projects
-      aiml: [
-        {
-          title: "Emotion Recognition",
-          description: "Develop a real-time emotion detection system using computer vision.",
-          difficulty: "Advanced",
-          duration: "4-5 months",
-          image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=500"
-        }
-      ]
-    };
+      // all Projects
+      all: [],
+        // CSE Projects
+  // CSE Projects
+  cse: [
+    {
+      title: "E-Waste Management System",
+      description: "Develop specialized tools and systems for efficient recovery of valuable materials from electronic waste.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Digital E-Waste Education Platform",
+      description: "Create a mobile application to educate consumers about proper E-Waste disposal and hazards of unscientific methods.",
+      difficulty: "Intermediate",
+      duration: "3-4 months",
+      image: "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Waste Management Data System",
+      description: "Develop an integrated digital governance system for municipal solid waste management data consolidation and analysis.",
+      difficulty: "Advanced",
+      duration: "5-6 months",
+      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Smart Medical Dispensers",
+      description: "Automated medication administration systems with remote monitoring capabilities.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Medication Reminders and Refills",
+      description: "Apps or devices to help seniors manage their medication schedules effectively.",
+      difficulty: "Intermediate",
+      duration: "3-4 months",
+      image: "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Integrated Medical Records and Prescriptions",
+      description: "Comprehensive health information management systems for elderly care.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Nutrition Apps",
+      description: "Applications providing personalized diet plans and nutrient tracking for elderly users.",
+      difficulty: "Intermediate",
+      duration: "3-4 months",
+      image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=500"
+    }
+  ],
+  // ECE Projects
+  ece: [
+    {
+      title: "Smart Litter Box System",
+      description: "Design an efficient waste washer system for public litter boxes to clean and segregate recyclables.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Automated Mixed Waste Segregator",
+      description: "Create a mobile road sweep system for automated segregation of mixed waste in public places.",
+      difficulty: "Advanced",
+      duration: "5-6 months",
+      image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "GPS-based Walking Aids",
+      description: "Wearable GPS trackers with fall detection technology for location monitoring.",
+      difficulty: "Intermediate",
+      duration: "3-4 months",
+      image: "https://images.unsplash.com/photo-1459478309853-2c33a60058e7?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "AI-based Fall Detector",
+      description: "Systems that quickly notify caregivers or emergency services in case of falls.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Vibration Alerts",
+      description: "Devices using vibration for notifications, suitable for those with hearing impairments.",
+      difficulty: "Intermediate",
+      duration: "2-3 months",
+      image: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=500"
+    }
+  ],
+  // EEE Projects
+  eee: [
+    {
+      title: "Manual Composting Shredder",
+      description: "Design a cost-effective, user-friendly manual shredder for decentralized aerobic composting units.",
+      difficulty: "Intermediate",
+      duration: "3-4 months",
+      image: "https://images.unsplash.com/photo-1542601600647-3a722a90a76b?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Smart Community Composting Device",
+      description: "Upgrade the Thumboormuzhi aerobic composting device with smart technology and improved efficiency.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Smart Sleep Monitoring",
+      description: "Devices to track and analyze sleep patterns in real-time for elderly users.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1517898717281-8e4385a41802?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Smart Fitness Equipment",
+      description: "Customizable exercise equipment with safety features for seniors.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Medical Alert Devices",
+      description: "Systems to monitor and alert for changes in vital signs like blood pressure and sugar levels.",
+      difficulty: "Intermediate",
+      duration: "3-4 months",
+      image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80&w=500"
+    }
+  ],
+  // AI & ML Projects
+  aiml: [
+    {
+      title: "Smart Medical Dispensers",
+      description: "AI-based device to automate medication administration with remote monitoring capabilities.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "AI-based Fall Detector",
+      description: "System that quickly notifies caregivers or emergency services in case of falls using AI technology.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Smart Sleep Monitoring",
+      description: "AI-powered devices to track and analyze sleep patterns in real-time for elderly users.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1517898717281-8e4385a41802?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Nutrition Apps with AI",
+      description: "Applications using AI to provide personalized diet plans and nutrient tracking for elderly users.",
+      difficulty: "Intermediate",
+      duration: "3-4 months",
+      image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Smart Home Adaptations",
+      description: "AI and ML-based tools for independent living, including sensors and voice-activated assistants.",
+      difficulty: "Advanced",
+      duration: "5-6 months",
+      image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "Emotion Recognition for Elderly",
+      description: "Develop a real-time emotion detection system using computer vision for elderly care.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      title: "AI-Powered Health Monitoring",
+      description: "Devices that use AI to monitor and alert for changes in vital signs like blood pressure and sugar levels.",
+      difficulty: "Advanced",
+      duration: "4-5 months",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=500"
+    }
+  ]
+};
+
+
 
     // Trending Projects Data
     const trendingProjects = [
@@ -433,12 +614,20 @@
         rating: 4.7
       }
     ];
+    // Populate the "all" section with all projects
+    projectsBySpec.all = [
+     ...projectsBySpec.cse,
+     ...projectsBySpec.ece,
+      ...projectsBySpec.eee,
+      ...projectsBySpec.aiml
+    ];
 
+console.log(projectsBySpec.all);
     // DOM Elements
     const projectsGrid = document.getElementById('projectsGrid');
     const trendingGrid = document.getElementById('trendingGrid');
     const searchInput = document.getElementById('searchInput');
-    let currentSpec = 'cse';
+    let currentSpec = 'all';
 
     // Render Projects Function
     function renderProjects(projects) {
